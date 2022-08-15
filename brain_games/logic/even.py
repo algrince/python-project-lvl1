@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 
-import prompt
 from random import randint
 
 

@@ -13,12 +13,10 @@ def start_game(game):
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     print(game.TASK)
-    
     for round in range(ROUNDS):
         question, right_answer = game.generate_round()
         print(f'Question: {question}')
         player_answer = prompt.string('Your answer: ')
-        
         if player_answer == right_answer:
             print('Correct!')
         else:
