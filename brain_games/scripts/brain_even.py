@@ -1,15 +1,12 @@
 #!/usr/bin/env python
 
 
-from brain_games.logic.even import is_even
-from brain_games.logic.even import question
-from brain_games.logic.even import even_odd
-from brain_games.logic.greet import welcome
+from brain_games.engine import start_game
+from brain_games.logic import even
 
 
 def main():
-    name = welcome()
-    even_odd(name)
+    start_game(even)
 
 
 if __name__ == '__main__':
