@@ -11,7 +11,7 @@ def generate_progression():
     length = randint(5, 10)
     step = randint(2, 20)
     sequence = []
-    term = 0   
+    term = 0
     for i in range(1, length + 1):
         term = term + step
         sequence.append(str(term))
