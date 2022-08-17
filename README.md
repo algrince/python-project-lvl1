@@ -26,10 +26,9 @@ To start the game write `brain-even` bash command.
 
 <details>
   <summary>Example</summary>
-[![asciicast](https://asciinema.org/a/YyeRvYl74PWAbN0xdVtbR1f9T.svg)](https://asciinema.org/a/YyeRvYl74PWAbN0xdVtbR1f9T)
+<a href="https://asciinema.org/a/YyeRvYl74PWAbN0xdVtbR1f9T" target="_blank"><img src="https://asciinema.org/a/YyeRvYl74PWAbN0xdVtbR1f9T.svg" /></a>
 </details>
 
 ## "Calculator" game: 
 You are offered a randomly generated expression (it can be addition, subtration or multiplication) and you need to type the result.
 To start the game write `brain-calc` bash command.
-[![asciicast](https://asciinema.org/a/fVR75zXqJ3xJ7DfXXevpIUXLi.svg)](https://asciinema.org/a/fVR75zXqJ3xJ7DfXXevpIUXLi)
