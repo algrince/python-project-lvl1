@@ -9,7 +9,7 @@ This is my first Python project "Brain games". With this package user can try 5 
 - Calculator
 - Greatest Common Divisor
 - Progression
-- Prime number check
+- Prime Number Check
 
 All games share the same mechanism. When executed, a game asks name of the player and greets them. A player can beat the game by answering correctly to 3 questions in a row. If a player makes a mistake, the game finishes. 
 
@@ -29,6 +29,42 @@ To start the game write `brain-even` bash command.
 <a href="https://asciinema.org/a/YyeRvYl74PWAbN0xdVtbR1f9T" target="_blank"><img src="https://asciinema.org/a/YyeRvYl74PWAbN0xdVtbR1f9T.svg" /></a>
 </details>
 
+
 ## "Calculator" game: 
 You are offered a randomly generated expression (it can be addition, subtration or multiplication) and you need to type the result.
 To start the game write `brain-calc` bash command.
+
+<details>
+  <summary>Example</summary>
+<a href="https://asciinema.org/a/fVR75zXqJ3xJ7DfXXevpIUXLi" target="_blank"><img src="https://asciinema.org/a/fVR75zXqJ3xJ7DfXXevpIUXLi.svg" /></a>
+</details>
+
+
+## "Greatest Common Divisor" game:
+You are offered two randomly generated numbers and you are requested to find their greatest common divisor.
+To start the game write `brain-gcd` bash command.
+
+<details>
+  <summary>Example</summary>
+asciinema
+</details>
+
+
+## "Progression" game:
+You are offered a randomly generated sequence (can be 5 - 10 numbers long) and you need to fill a hidden number in the progressions.
+To start the game write `brain-progression` bash command.
+
+<details>
+  <summary>Example</summary>
+asciinema
+</details>
+
+
+## "Prime Number Check" game:
+You are offered a randomly generated number and you need to answer if this number is prime or not.
+To start the game write `brain-prime` bash command.
+
+<details>
+  <summary>Example</summary>
+asciinema
+</details>
