@@ -13,7 +13,7 @@ This is my first Python project "Brain games". With this package user can try 5 
 
 All games share the same mechanism. When executed, a game asks name of the player and greets them. A player can beat the game by answering correctly to 3 questions in a row. If a player makes a mistake, the game finishes. 
 
-This file includes a short description of each game, package installation guide and an asciinema of every game with an example of both win and lose scenario.
+This file includes a short description of each game, package installation guide and a screen recording (made with asciinema) of every game with an example of both win and lose scenario.
 
 
 ## Package installation: 
@@ -23,8 +23,11 @@ Write in bash a command `pip install brain-games --user`
 ## "Even or odd" game: 
 You are offered one randomly generated number and you need to answer if the number is even or not.
 To start the game write `brain-even` bash command.
-[![asciicast](https://asciinema.org/a/YyeRvYl74PWAbN0xdVtbR1f9T.svg)](https://asciinema.org/a/YyeRvYl74PWAbN0xdVtbR1f9T)
 
+<details>
+  <summary>Example</summary>
+[![asciicast](https://asciinema.org/a/YyeRvYl74PWAbN0xdVtbR1f9T.svg)](https://asciinema.org/a/YyeRvYl74PWAbN0xdVtbR1f9T)
+</details>
 
 ## "Calculator" game: 
 You are offered a randomly generated expression (it can be addition, subtration or multiplication) and you need to type the result.
