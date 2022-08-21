@@ -4,7 +4,7 @@
 ### Codeclimate:
 [![Maintainability](https://api.codeclimate.com/v1/badges/8fffcda03c60485222de/maintainability)](https://codeclimate.com/github/algrince/python-project-lvl1/maintainability)
 
-This is my first Python project "Brain games". With this package user can try 5 different games:
+This is my first Python project *"Brain games"*. With this package user can try 5 different games:
 - Even or Odd
 - Calculator
 - Greatest Common Divisor
@@ -46,7 +46,7 @@ To start the game write `brain-gcd` bash command.
 
 <details>
   <summary>Example</summary>
-asciinema
+<a href="https://asciinema.org/a/e6NW6vXAugMAiCTeF4HZwgwY3" target="_blank"><img src="https://asciinema.org/a/e6NW6vXAugMAiCTeF4HZwgwY3.svg" /></a>
 </details>
 
 
@@ -56,7 +56,7 @@ To start the game write `brain-progression` bash command.
 
 <details>
   <summary>Example</summary>
-asciinema
+<a href="https://asciinema.org/a/516281" target="_blank"><img src="https://asciinema.org/a/516281.svg" /></a>
 </details>
 
 
@@ -66,5 +66,5 @@ To start the game write `brain-prime` bash command.
 
 <details>
   <summary>Example</summary>
-asciinema
+<a href="https://asciinema.org/a/516283" target="_blank"><img src="https://asciinema.org/a/516283.svg" /></a>
 </details>
