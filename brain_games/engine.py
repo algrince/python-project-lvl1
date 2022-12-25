@@ -7,7 +7,7 @@ import prompt
 ROUNDS = 3
 
 
-def start_game(game):
+def play_game(game):
     """The main engine of the game"""
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
