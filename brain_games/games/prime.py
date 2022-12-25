@@ -17,7 +17,7 @@ def is_prime(number):
     '''Checks if a number is prime'''
     sqrt_number = int(sqrt(number))
     for num in range(2, sqrt_number + 1):
-        if num % sqrt_number == 0:
+        if number % num == 0:
             return False
     return True
 
