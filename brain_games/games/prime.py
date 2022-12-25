@@ -5,7 +5,7 @@ from math import sqrt
 from brain_games.cli import generate_answer
 
 
-TASK = 'Answer "yes" if given number is prime. Otherwise anser "no".'
+TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def generate_vars(min_num, max_num):
