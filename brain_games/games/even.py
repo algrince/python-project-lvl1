@@ -16,7 +16,7 @@ def is_even(num):
 
 def generate_round(number=None):
     '''Generates a question from passed arguments or randomly chooses them'''
-    if number is None: 
+    if number is None:
         number = randint(MIN_NUM, MAX_NUM)
     question = str(number)
     right_answer = generate_answer(is_even(number))
