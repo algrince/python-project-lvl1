@@ -5,17 +5,10 @@ from random import randint
 
 
 TASK = 'What number is missing in the progression?'
-
-
-def generate_vars(length_size, step_size):
-    '''Generates length and step of progression
-        with an index of the number to hide'''
-    min_len, max_len = length_size
-    min_step, max_step = step_size
-    length = randint(min_len, max_len)
-    step = randint(min_step, max_step)
-    index = randint(0, length - 1)
-    return length, step, index
+MIN_LEN = 5
+MAX_LEN = 10
+MIN_STEP = 2
+MAX_STEP = 20
 
 
 def generate_progression(length, step):
@@ -35,14 +28,18 @@ def generate_question(sequence, index):
     return question
 
 
-def generate_round(**kwargs):
+def generate_round(
+    length=None,
+    step=None,
+    index=None,
+):
     '''Generates a question from passed arguments or randomly chooses them'''
-    if kwargs:
-        length = kwargs['length']
-        step = kwargs['step']
-        index = kwargs['index']
-    else:
-        length, step, index = generate_vars((5, 10), (2, 20))
+    if length is None:
+        length = randint(MIN_LEN, MAX_LEN)
+    if step is None:
+        step = randint(MIN_STEP, MAX_STEP)
+    if index is None:
+        index = randint(0, length - 1)
     sequence = generate_progression(length, step)
     right_answer = str(sequence[index])
     question = generate_question(sequence, index)

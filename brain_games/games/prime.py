@@ -6,11 +6,8 @@ from brain_games.cli import generate_answer
 
 
 TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-
-
-def generate_vars(min_num, max_num):
-    '''Generates a number in passed interval'''
-    return randint(min_num, max_num)
+MIN_NUM = 2
+MAX_NUM = 100
 
 
 def is_prime(number):
@@ -22,12 +19,10 @@ def is_prime(number):
     return True
 
 
-def generate_round(**kwargs):
+def generate_round(number=None):
     '''Generates a question from passed arguments or randomly chooses them'''
-    if kwargs:
-        number = kwargs['number']
-    else:
-        number = generate_vars(2, 100)
+    if number is None:
+        number = randint(MIN_NUM, MAX_NUM)
     question = str(number)
     right_answer = generate_answer(is_prime(number))
     return question, right_answer

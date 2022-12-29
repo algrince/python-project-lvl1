@@ -5,11 +5,8 @@ from random import randint
 from brain_games.cli import generate_answer
 
 TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
-
-
-def generate_vars(min_num, max_num):
-    '''Generates a number in passed interval'''
-    return randint(min_num, max_num)
+MIN_NUM = 1
+MAX_NUM = 100
 
 
 def is_even(num):
@@ -17,12 +14,10 @@ def is_even(num):
     return num % 2 == 0
 
 
-def generate_round(**kwargs):
+def generate_round(number=None):
     '''Generates a question from passed arguments or randomly chooses them'''
-    if kwargs:
-        number = kwargs['number']
-    else:
-        number = generate_vars(1, 100)
+    if number is None: 
+        number = randint(MIN_NUM, MAX_NUM)
     question = str(number)
     right_answer = generate_answer(is_even(number))
     return question, right_answer

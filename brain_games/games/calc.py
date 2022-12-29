@@ -6,14 +6,10 @@ from random import randint, choice
 
 TASK = 'What is the result of the expression?'
 OPERATIONS = ['+', '-', '*']
-
-
-def generate_vars(min_num, max_num):
-    '''Generates two numbers in passed interval and an operator'''
-    number1 = randint(min_num, max_num)
-    number2 = randint(min_num, max_num)
-    operator = choice(OPERATIONS)
-    return number1, number2, operator
+MIN_NUM1 = 1
+MAX_NUM1 = 25
+MIN_NUM2 = 1
+MAX_NUM2 = 25
 
 
 def calculate(num1, num2, oper):
@@ -26,14 +22,18 @@ def calculate(num1, num2, oper):
         return num1 * num2
 
 
-def generate_round(**kwargs):
+def generate_round(
+    number1=None,
+    number2=None,
+    operator=None,
+):
     '''Generates a question from passed arguments or randomly chooses them'''
-    if kwargs:
-        number1 = kwargs['number1']
-        number2 = kwargs['number2']
-        operator = kwargs['operator']
-    else:
-        number1, number2, operator = generate_vars(1, 25)
+    if number1 is None:
+        number1 = randint(MIN_NUM1, MAX_NUM1)
+    if number2 is None:
+        number2 = randint(MIN_NUM2, MAX_NUM2)
+    if operator is None:
+        operator = choice(OPERATIONS)
     question = f'{number1} {operator} {number2}'
     right_answer = str(calculate(number1, number2, operator))
     return question, right_answer
